@@ -1,4 +1,29 @@
-.box {
-    font-size: 28px;
-    color: rgb(160, 73, 247);
+/* 클릭시 투명도 변환 */
+/* div {
+    font-size: 50px;
+} */
+
+/* 스타일 시트에서 p 태그의 초기 투명도를 50%로 설정 */
+/* p {
+    font-size: 50px;
+    opacity: 0;
+} */
+/* 클릭시 투명도 변환 */
+
+#myBox {
+    width: 500px;
+    height: 500px;
+    background-color: green;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 150px;
+    color: white;
+    transition: all 0.5s;
+}
+
+#myBox:hover {
+    background-color: red;
+    color: black;
+    font-size: 180px;
 }
