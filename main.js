@@ -12,9 +12,9 @@
 const myBox = document.getElementById("myBox");
 
 myBox.addEventListener("mouseover", function() {
-    myBox.innerHTML = "시1발~";
+    myBox.innerHTML = "시 1 발~";
 });
 
 myBox.addEventListener("mouseout", function() {
-    myBox.innerHTML = "잠온다";
+    myBox.innerHTML = "똥마렵다";
 });
