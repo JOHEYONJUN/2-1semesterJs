@@ -234,4 +234,25 @@
       문장들n;
       break;
     }
+```js
+let value = "D";
+switch(value) {
+    case "A":
+    console.log("A다");
+    break;
+    case "B":
+    console.log("B다");
+    break;
+    case "C":
+    console.log("C다");
+    break;
+    case "D":
+    console.log("D다");
+    break;
+    default :
+    console.log("암것도아님.")
+}
+```
 #### break문
+ - 반복문에서도 사용
+   - block: { ~ } 형태의 코드
