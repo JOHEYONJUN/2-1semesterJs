@@ -9,12 +9,23 @@
 // 클릭시 투명도 변환
 
 // 마우스포인터 올릴시 반응
-const myBox = document.getElementById("myBox");
 
-myBox.addEventListener("mouseover", function() {
-    myBox.innerHTML = "시 1 발~";
-});
 
-myBox.addEventListener("mouseout", function() {
-    myBox.innerHTML = "똥마렵다";
-});
+
+let value = "D";
+switch(value) {
+    case "A":
+    console.log("A다");
+    break;
+    case "B":
+    console.log("B다");
+    break;
+    case "C":
+    console.log("C다");
+    break;
+    case "D":
+    console.log("D다");
+    break;
+    default :
+    console.log("암것도아님.")
+}

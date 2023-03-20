@@ -218,4 +218,20 @@
  - }
  - 가능한 한 중첩 조건문은 사용하지 않는 것이 좋다 (보기 어려우니까)
 ### switch문
+# 시험에 나올수도?!?
+// 시험문제에 switch를 if-else로 바꾸라 할 수 있음
+ - switch(수식) {
+    case 값1: // 수식의 결과값 === 값1 true인 경우
+      문장들1;
+      break;
+    case 값2:
+      문장들2;
+      break;
+    case 값3:
+      문장들3;
+      break;
+    default:
+      문장들n;
+      break;
+    }
 #### break문
