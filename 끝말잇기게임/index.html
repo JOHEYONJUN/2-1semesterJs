@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="UTF-8" />
+    <title>끝말잇기 게임</title>
+    <script defer src="./game.js"></script>
+  </head>
+
+  <body>
+    <h1>끝말잇기 게임</h1>
+    <p>시작 단어: <span id="start-word">사과</span></p>
+    <p>남은 시간: <span id="timer"></span></p>
+    <p>
+      입력 단어:
+      <input type="text" id="user-input" />
+      <button onclick="checkAnswer()">입력</button>
+      <button id="retry-button" onclick="retryGame()" style="display: none">
+        재도전
+      </button>
+    </p>
+
+    <p id="result"></p>
