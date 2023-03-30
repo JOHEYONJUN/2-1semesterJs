@@ -1,0 +1,79 @@
+/* 전체 body */
+body {
+    background-color: #f7f7f7;
+    font-family: 'Noto Sans KR', sans-serif;
+    color: #444444;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  /* 제목 */
+  h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top: 0;
+  }
+  
+  /* 입력란과 버튼 영역 */
+  p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+  }
+  
+  /* 입력 단어 레이블 */
+  label {
+    font-weight: bold;
+    margin-right: 5px;
+  }
+  
+  /* 입력 단어 입력창 */
+  input[type="text"] {
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px solid #444444;
+  }
+  
+  /* 버튼 */
+  button {
+    padding: 5px;
+    margin-top: 10px;
+    background-color: #444444;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  /* 버튼 호버 효과 */
+  button:hover {
+    background-color: #555555;
+  }
+  
+  /* 결과 메시지 */
+  #result {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  /* 타이머 */
+  #timer {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #db3a34;
+  }
+  
+  /* 시작 단어 */
+  #start-word {
+    font-weight: bold;
+  }
+  
