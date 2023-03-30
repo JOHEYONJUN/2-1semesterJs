@@ -15,6 +15,20 @@
        - P C  : 자손
        - C1 ~ C2 (형제)
    - 2. 조작/이벤트 추가
+
+     - 태그엘리먼트.addEventListener('이벤트명',리스너함수)
+
+     - 리스너함수
+     - const 리스너함수 = (event) => {처리할 내용 코딩;}
+       - event.target : 이벤트가 발생한 엘리먼트라는 의미
+       - event.target.value : 이벤트가 발생한 엘리먼트가 가지고 있는 값
+         - <input>, <textarea>, <select> 등에서만 사용가능
+  
+       - <input>, <textarea>, <select> 외의 태그들에서 값은?
+         - 태그엘리먼트.textContent
+         - 태그엘리먼트.innerText
+         - 태그엘리먼트.innerHTML
+     - const 리스너함수 = event => {처리할 내용 코딩;}
 <br>
 
 # BOM
