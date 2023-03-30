@@ -22,13 +22,18 @@
      - const 리스너함수 = (event) => {처리할 내용 코딩;}
        - event.target : 이벤트가 발생한 엘리먼트라는 의미
        - event.target.value : 이벤트가 발생한 엘리먼트가 가지고 있는 값
-         - <input>, <textarea>, <select> 등에서만 사용가능
+         - <input>, <textarea>, <select>(입력태그엘리먼트) 등에서만 사용가능
   
-       - <input>, <textarea>, <select> 외의 태그들에서 값은?
+       - <input>, <textarea>, <select>(입력태그엘리먼트) 외의 태그들에서 값은?
          - 태그엘리먼트.textContent
          - 태그엘리먼트.innerText
          - 태그엘리먼트.innerHTML
      - const 리스너함수 = event => {처리할 내용 코딩;}
+   - 3. 반영
+     - 태그엘리먼트.appendChild(추가할 태그 엘리먼트)
+   - 입력태그엘리먼트.focus();
+     - 해당되는 입력창에 포커스를 부여
+     - 반대로 입력태그엘리먼트.blur() : 포커스 해제
 <br>
 
 # BOM
