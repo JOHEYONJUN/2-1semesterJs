@@ -1,0 +1,14 @@
+html {
+    margin: 0 auto;
+}
+
+body {
+    margin: 100px auto;
+    box-sizing: border-box;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 60%;
+    align-items: center;
+}

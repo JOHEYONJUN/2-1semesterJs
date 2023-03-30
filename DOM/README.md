@@ -34,6 +34,54 @@
    - 입력태그엘리먼트.focus();
      - 해당되는 입력창에 포커스를 부여
      - 반대로 입력태그엘리먼트.blur() : 포커스 해제
+   * html 입력 : Emmet 기능 익히기
+```html
+     <body>
+
+    <!-- main>section>h1 --> 
+    <main>
+        <section>
+            <h1></h1>
+        </section>
+    </main>
+
+    <!-- h1+h2+h2 --> <!-- 형제요소 만들기-->
+    <h1></h1>
+    <h2></h2>
+    <h2></h2>
+    
+    <!-- ul>li*5 --> <!-- ul 안에 li를 5개-->
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+
+    <!-- nav>ul>li*5>a[href=www.test$.com]{여기를 클릭} -->
+		<!-- $ : 숫자를 표현 / {} : 디폴트로 넣어줄 문자 입력가능 -->
+    <nav>
+        <ul>
+            <li><a href="www.test1.com">여기를클릭</a></li>
+            <li><a href="www.test2.com">여기를클릭</a></li>
+            <li><a href="www.test3.com">여기를클릭</a></li>
+            <li><a href="www.test4.com">여기를클릭</a></li>
+            <li><a href="www.test5.com">여기를클릭</a></li>
+        </ul>
+    </nav>
+
+</body>
+```
+  * web application의 소스구성
+    - html
+      - 화면에 나타날 요소(element)
+    - css
+      - 요소의 디자인
+    - javascript
+      - 요소들의 움직임(프로그램의 작동)
+
+
 <br>
 
 # BOM
