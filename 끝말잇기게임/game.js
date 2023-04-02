@@ -56,3 +56,8 @@ location.reload();
 
 startTimer();
 
+let str = 'ABCABC';
+let replaced_str = str.replace(/AB/g, '');
+
+document.write('삭제 전 : ', str, '<br/>');
+document.write('AB 삭제 후 : ', replaced_str, '<br/>');
