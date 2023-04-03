@@ -73,19 +73,44 @@
 // });
 // ---
 
-// onClickButton 호출 시 console 출력
-const onClickButton = () => {
-    console.log('버튼 클릭');
-};
-// $button에 button 쿼리 선택
+// // onClickButton 호출 시 console 출력
+// const onClickButton = () => {
+//     console.log('버튼 클릭');
+// };
+// // $button에 button 쿼리 선택
+// const $button = document.querySelector('button');
+// // $button에 이벤트 추가 -> 클릭 시 onClickButton 호출
+// $button.addEventListener('click', onClickButton);
+
+
+// // 익명함수의 매개변수(event)가 '이벤트 객체'를 의미 
+// // target -> 이벤트를 발생시킨 객체를 반환
+// // type -> 	이벤트의 이름을 반환
+// const onInput = (event) => {
+//     console.log('글자 입력', event.target.value);
+// };
+// // input 태그를 선택;
+// const $input = document.querySelector('input');
+// // input(글자 입력)시 onInput함수(입력 시 '글자 입력'과 event객체(입력 값)을 반환.
+// $input.addEventListener('input', onInput);
+
+// ---
+
+// 입력받은 값을 Number로 형 변환
+const number = Number(prompt('몇 명이 참가하나요?'));
+// button태그를 선택
 const $button = document.querySelector('button');
-// $button에 이벤트 추가 -> 클릭 시 onClickButton 호출
-$button.addEventListener('click', onClickButton);
-
-
-// 익명함수의 매개변수(event)가 '이벤트 객체'를 의미 
-// target -> 이벤트를 발생시킨 객체를 반환
-// type -> 	이벤트의 이름을 반환
-const onInput = (event) => {
-    console.log('글자 입력', event.target.value);
+// input태그를 선택
+const $input = document.querySelector('input');
+// 함수
+const onClickButton = () => {
+      
 };
+// 함수
+const onInput = () => {
+
+};
+// 선택한 버튼 태그 클릭 시 -> onClickButton 호출
+$button.addEventListener('click', onClickButton);
+// 선택한 input 태그 입력 시 -> onInput 호출
+$input.addEventListener('input', onInput);
