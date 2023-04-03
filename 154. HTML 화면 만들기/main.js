@@ -50,3 +50,25 @@
 // const $buttons = document.querySelectorAll('.Hello');
 // console.log($buttons);
 
+// ---
+
+// 태그에 이벤트 달기
+
+// 화살표함수 정의 (호출 시 console에 '버튼 클릭' 출력)
+// const onClickButton = () => {
+//     console.log('버튼 클릭');
+// };
+
+// html의 button을 선택
+// const $button = document.querySelector('button');
+
+// button에 이벤트 추가 ('click'시, onClickButton호출)
+// $button.addEventListener('click', onClickButton);
+
+// ---
+// 위 코드와 같음
+document.querySelector('button').addEventListener('click', () => {
+    console.log('버튼 클릭');
+});
+// ---
+
