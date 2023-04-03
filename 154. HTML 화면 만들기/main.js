@@ -96,19 +96,56 @@
 
 // ---
 
+// // 입력받은 값을 Number로 형 변환
+// const number = Number(prompt('몇 명이 참가하나요?'));
+// // button태그를 선택
+// const $button = document.querySelector('button');
+// // input태그를 선택
+// const $input = document.querySelector('input');
+// // 함수
+// const onClickButton = () => {
+      
+// };
+// // 함수
+// const onInput = () => {
+
+// };
+// // 선택한 버튼 태그 클릭 시 -> onClickButton 호출
+// $button.addEventListener('click', onClickButton);
+// // 선택한 input 태그 입력 시 -> onInput 호출
+// $input.addEventListener('input', onInput);
+
+// ---
+
 // 입력받은 값을 Number로 형 변환
 const number = Number(prompt('몇 명이 참가하나요?'));
 // button태그를 선택
 const $button = document.querySelector('button');
 // input태그를 선택
 const $input = document.querySelector('input');
+// id="word"인 태그를 선택
+const $word = document.querySelector('#word');
+// 제시어
+let word;
+// 현재 단어
+let newWord;
 // 함수
 const onClickButton = () => {
-      
+    // 제시어가 비어있는가?
+      if(!word) {
+        // 비어있다.
+        word = newWord; // 입력한 단어를 제시한 단어로
+        // 위에서 정의된 word를 화면에 제시어로 표시
+        $word.textContent = word;
+      }
+      else {
+        // 비어 있지 않다.
+      }
 };
 // 함수
-const onInput = () => {
-
+const onInput = (event) => {
+    // 입력하는 단어를 현재 단어로
+    newWord = event.target.value;
 };
 // 선택한 버튼 태그 클릭 시 -> onClickButton 호출
 $button.addEventListener('click', onClickButton);
