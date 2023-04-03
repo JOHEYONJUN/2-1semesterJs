@@ -67,8 +67,25 @@
 
 // ---
 // 위 코드와 같음
-document.querySelector('button').addEventListener('click', () => {
-    console.log('버튼 클릭');
-});
+// button 쿼리 선택 -> 이벤트 추가 (click시) -> console.log('버튼 클릭') 출력
+// document.querySelector('button').addEventListener('click', () => {
+//     console.log('버튼 클릭');
+// });
 // ---
 
+// onClickButton 호출 시 console 출력
+const onClickButton = () => {
+    console.log('버튼 클릭');
+};
+// $button에 button 쿼리 선택
+const $button = document.querySelector('button');
+// $button에 이벤트 추가 -> 클릭 시 onClickButton 호출
+$button.addEventListener('click', onClickButton);
+
+
+// 익명함수의 매개변수(event)가 '이벤트 객체'를 의미 
+// target -> 이벤트를 발생시킨 객체를 반환
+// type -> 	이벤트의 이름을 반환
+const onInput = (event) => {
+    console.log('글자 입력', event.target.value);
+};
