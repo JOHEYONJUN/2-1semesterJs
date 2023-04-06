@@ -125,23 +125,70 @@ const $button = document.querySelector('button');
 const $input = document.querySelector('input');
 // id="word"인 태그를 선택
 const $word = document.querySelector('#word');
+// id="order"인 태그를 선택 (현재 순서)
+const $order = document.querySelector(`#order`);
 // 제시어
 let word;
 // 현재 단어
 let newWord;
+
+
 // 함수
 const onClickButton = () => {
     // 제시어가 비어있는가?
+
+
       if(!word) {
         // 비어있다.
         word = newWord; // 입력한 단어를 제시한 단어로
         // 위에서 정의된 word를 화면에 제시어로 표시
         $word.textContent = word;
+        // order변수에 참가자 문자열을 order에 Number로 저장
+        const order = Number($order.textContent);
+
+        // 현재 순서 + 1 > 참가자 수 -> number보다 크면 1번 순서로 돌아감
+        if (order + 1 > number) {
+          $order.textContent = 1;
+        }
+        // 현재순서 + 1을 해줘서 순서를 넘김
+        else {
+
+          $order.textContent = order + 1;
+        }
       }
+
+      
+
+
+      // 비어 있지 않다.
       else {
-        // 비어 있지 않다.
+        // 입력한 단어가 올바른가?
+        if (word[word.length - 1] === newWord[0]) {
+          // 올바르다
+          word = newWord; // 현재 단어를 제시어에 저장
+          $word.textContent = word; // 화면에 제시어 표시
+          // order변수에 참가자 문자열을 order에 Number로 저장
+          const order = Number($order.textContent);
+
+          // 현재 순서 + 1 > 참가자 수 -> number보다 크면 1번 순서로 돌아감
+          if (order + 1 > number) {
+            $order.textContent = 1;
+          }
+          // 현재순서 + 1을 해줘서 순서를 넘김
+          else {
+            $order.textContent = order + 1;
+          }
+          alert('올바른 단어입니다.')
+        }
+
+        else {
+          // 올바르지 않다.
+          alert('올바르지않습니다.')
+        }
       }
 };
+
+
 // 함수
 const onInput = (event) => {
     // 입력하는 단어를 현재 단어로

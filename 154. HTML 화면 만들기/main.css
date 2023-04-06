@@ -1,0 +1,37 @@
+
+html {
+    font-size: 1px;
+    background-color: black;
+    transition: font-size 1s;
+}
+
+
+section.one {
+    color: white;
+    display: flex;
+    margin-top: 10px;
+    
+    justify-content: center;
+    align-items: center;
+}
+
+section.two {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 180px;
+    margin-bottom: 0;
+    color: red;
+}
+
+
+
+html:hover {
+    font-size: 50px;
+}
