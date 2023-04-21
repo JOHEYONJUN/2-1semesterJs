@@ -55,7 +55,7 @@ $form.addEventListener('submit', (event) => {
     // input에 들어있는 값을 가져온다.
     const value = $input.value;
     // submit을 하면 input을 초기화
-    value.value = '';
+    $input.value = '';
     // input의 값을 검사하기위해 checkInput을 호출
     const valid = checkInput(value);
 
@@ -71,7 +71,7 @@ $form.addEventListener('submit', (event) => {
     }
 
     // tires.length(시도횟수)가 9번이 넘어가면
-    if (value == 1234) {
+    if (tries.length >= 9) {
         //            message에 새로운 TextNode 생성 answer.join('') (정답을 문자열로 전환)
         const message = document.createTextNode(`패배! 정답은 ${answer.join('')}입니다!`)
         // $logs(div)의 최후미에 message(TextNode)를 추가
@@ -80,14 +80,30 @@ $form.addEventListener('submit', (event) => {
         return;
     }
 
+    
+
     // n 스트라이크 n 볼인지 검사
     let strike = 0;
     let ball = 0;
     // 정답의 길이만큼 반복
     for (let i = 0; i < answer.length; i++) {
-        // input에 들어온 값이
+        // input에 들어온 값(value)이 answer[i]의 문자와 같은지 비교
         const index = value.indexOf(answer[i]);
+        // indexOf는 일치하지않으면 -1을 반환 그걸 이용해 일치하는 숫자만 받아온다.
+        if (index > -1) {
+            // 반환받은 값(indexOf로 찾은 index)와 i(정답의 index)가 같으면 strike
+            if (index === i) {
+                strike += 1;
+            }
+            // 아니라면 있긴하지만 위치가 다르니 ball
+            else {
+                ball += 1;
+            }
+        }
     }
+    // div에 결과를 출력 br요소를 추가해 열전환
+    $logs.append(`${value}: ${strike} 스트라이크 ${ball} 볼`, document.createElement('br'));
+    tries.push(value);
 })
 
 
