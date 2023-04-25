@@ -32,11 +32,11 @@ console.log(answer);
 const tries = [];
 function checkInput(input) {
     
+    // 만약 input의 길이가 4가 아니면
     if (input.length !== 4) {
         return alert(`4자리 숫자를 입력해 주세요.`)
     }
 
-    // 만약 input의 길이가 4가 아니면
     // Set은 중복을 허용하지 않는 특수한 배열
     // new Set('1231')을 하면 Set 내부에는 '1,2,3'만 들어감
     if (new Set(input).size !== 4) {
