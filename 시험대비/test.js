@@ -75,3 +75,40 @@ $button.addEventListener('click', () => {
     $input.focus();
 })
 
+// let value = 'd';
+
+// switch (value) {
+//     case 'a':
+//         console.log('a');
+//         break;
+//     case 'b':
+//         console.log('b');
+//         break;
+//     case 'c':
+//         console.log('c');
+//         break;
+//     default:
+//         console.log('일치없음')
+
+// }
+
+
+// const a = ['가', '라', '다', '라', '마', '라'];
+
+
+
+
+
+// let cond = true;
+// let sex = false;
+// let value = '';
+
+// switch (cond) {
+//     case true:
+//         value = '참';
+//         break;
+//     case false:
+//         value = '거짓';
+//         break;
+// }
+
